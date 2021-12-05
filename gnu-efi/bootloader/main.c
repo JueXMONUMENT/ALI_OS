@@ -1,8 +1,10 @@
 #include <efi.h>
 #include <efilib.h>
 #include <elf.h>
+#include <stddef.h>
+#include <stdint.h>
 
-typedef unsigned long long size_t;
+
 
 EFI_FILE* LoadFile(EFI_FILE* Directory, CHAR16* Path, EFI_HANDLE ImageHandle, EFI_SYSTEM_TABLE* SystemTable) {
 	EFI_FILE* LoadedFile;
